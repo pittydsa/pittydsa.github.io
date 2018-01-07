@@ -1,30 +1,10 @@
 ---
 layout: 'layout'
-permalink: '/'
 ---
-
 
   <body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"   >About Us</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#calendar">Calendar</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#press"   >Press</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact" >Contact / Social Media</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#social"  >Social</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+{% include navigation.html %}
 
     <!-- Intro Header -->
     <header class="masthead">
@@ -117,16 +97,7 @@ permalink: '/'
       </div>
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="/assets/vendor/jquery/jquery.min.js"></script>
-    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="/assets/js/grayscale.min.js"></script>
+{% include js_bottom.html %}
   </body>
+
+

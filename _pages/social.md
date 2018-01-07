@@ -1,0 +1,4 @@
+---
+permalink: '/social'
+layout: 'redirect'
+---
