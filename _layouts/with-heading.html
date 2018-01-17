@@ -1,0 +1,20 @@
+---
+layout: 'document'
+---
+    <!-- Main -->
+      <section id="main" class="wrapper style1">
+        <header class="major">{% comment %}
+
+          This bit takes the heading and subheading from page variables, or
+          having failed to find it, reminds the programmer to add a heading
+          and subheading variable to the page variable definition section in
+          the front-matter.
+
+          {% endcomment %}
+          <h2>{% if page.heading    %}{{ page.heading    }}{% else %}{% raw %}{{ page.heading }}{%    endraw %}}{% endif %}</h2>
+          <p>{%  if page.subheading %}{{ page.subheading }}{% else %}{% raw %}{{ page.subheading }}{% endraw %}}{% endif %}</p>
+        </header>
+
+        {{ content }}
+
+      </section>
